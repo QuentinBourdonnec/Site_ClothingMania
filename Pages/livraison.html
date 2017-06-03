@@ -1,0 +1,107 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../CSS/Global.css"/>
+<link rel="icon" type="image/gif" href="../Images/Icones/logo-c.png" />
+<title>Livraison</title>
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+  <script src="http://use.edgefonts.net/allan:n7:default;passion-one:n7:default;kaushan-script:n4:default;ubuntu-condensed:n4:default.js" type="text/javascript"></script>
+  <script src="../JS/livraison.js" type="text/javascript"></script>
+</head>
+
+
+<body background="../Images/Background/fond decran2.jpg">
+<h1 style="color:#303030;">Livraison a domicile</h1>
+
+
+<form id="Form" width = "80%">
+
+<div class="DivLib">
+  <div id="identité"> 
+          <li>Identité:</li><br>
+              <label>Titre*: 
+              <select required id="Titre" tabindex="-1">
+              	  <option> </option>
+                  <option>Mr</option>
+                  <option>Mme</option>
+                  <option>Mlle</option>
+      </select></label><br>
+              <label>Nom*: <input type="text" required id="Nom" placeholder="Henry"></label><br>
+              <label>Prenom*: <input type="text" required id="Prenom" placeholder="Arthur"></label><br>   
+  </div>
+  
+  <div id="coordonée">
+          <li>Coordonée:</li><br>
+          <label>Tel fixe: <input type="tel" id="FIXE" placeholder="02XXXXXXXX" maxlength="10"></label><br>
+          <label>Tel portable*: <input type="tel" required id="PORTABLE" placeholder="06XXXXXXXX" maxlength="10"></label><br>
+          <label>Mail*: <input type="email" required id="MAIL" placeholder="Exemple:Clothes@gmail.com" size="30"></label><br>
+  </div>
+</div>
+
+
+<div class="DivLib" id="adresse">
+	<li>Adresse:</li><br>
+    <label>Pays*: <input type="text" required id="PAYS" placeholder="Exemple:France"></label><br>
+    <label>Ville*: <input type="text" required id="VILLE" placeholder="Exemple: Rennes"></label><br>
+    <label>Code Postal*: <input type="text" required id="POSTAL" placeholder="Exemple:35000" maxlength="6"></label><br>
+    <label>Numero*: 
+    <select id="NUMERO">
+        <option> </option>    
+    </select></label><br>
+    <script>
+	var i;
+	var option;
+	var text;
+	for(i = 0; i <= 100; i++){
+	option = document.createElement("option");
+	text = document.createTextNode(i.toString());
+	option.appendChild(text);
+	document.getElementById("NUMERO").appendChild(option);
+	}
+	</script>
+    <label>Voie*: 
+    <select id="VOIE">
+        <option> </option>
+        <option>rue</option>
+        <option>allée</option>
+        <option>voie</option>
+        <option>impasse</option>
+    </select></label><br>
+    <label>Rue*: <input type="text" required id="RUE" placeholder="Exemple:Anatol France"></label><br>
+    <label>Complément: <input type="text" id="COMPLE" placeholder="Exemple:Bis"></label><br>
+</div><br>
+<script>
+	var DivId = document.getElementById("identité").offsetHeight;
+	var DivCo = document.getElementById("coordonée").offsetHeight;
+	document.getElementById("adresse").style.height = (DivCo + DivId).toString() + "px";
+</script>
+<a href="#"><input type="button" class="btn" onClick="Verification()" value="Valider"><input type="reset" class="btn"></a>
+</form>
+
+<br><br><br><br><br>
+
+<footer>
+	<div class="ColFooter">
+		<center><strong><h3>Moyen de payement</h3></strong></center>
+		<center><img src="../Images/Icones/pay.png" title="moyen de payement" alt="image non trouvé"></center>
+	</div>
+
+  	<div class="ColFooter">
+		<center><strong><h3>Contactez nous</h3></strong></center>
+	 	<blockquote>
+		<p>Contacte:<a href="bateau.html">0658469523</a></p>
+   	 	</blockquote>
+	  	<a href="mailto:mail.bidon@clotingmania.com">mail.bidon@clotingmania.com</a><br>
+	</div>
+
+	<div class="ColFooter">
+		<center><strong><h3>Structure</h3></strong></center>
+		<a href="../index.html"> *A la page principale</a><br>
+    	<a onClick="alert('Bientot disponible')"> *A la page Intermediaire</a><br>
+    	<a href="livraison.html"> *Livraison à domicile </a><br>
+    	<a onClick="alert('Bientot disponible')"> *Au panier</a><br>
+	</div>
+</footer>
+</body>
+</html>

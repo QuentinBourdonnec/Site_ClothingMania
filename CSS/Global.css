@@ -1,0 +1,196 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* CSS sur tag */
+a{
+	text-decoration:none;
+	color:#1C8BE6;
+	font-size:1.6em;
+}
+
+a:hover{
+	text-decoration: underline;
+	font-family: ubuntu-condensed;
+}
+
+body{
+	font-family:ubuntu-condensed;
+	padding:10px;
+	text-align:center;
+}
+
+footer{
+   background-color:#9E9E9E;
+}
+
+h2{
+	text-decoration:underline;
+}
+
+li{
+	max-width: 60%;
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+/* CSS sur ID */
+
+#Blanc{
+	height: 500px;
+}
+
+#Acceuil{
+	vertical-align:top;
+}
+
+#Img-7, #Img-8, #Img-9, #Img-10, #Img-11,
+#Img-12, #Img-13, #Img-14, #Img-15, #Img-16, #Img-17{
+	max-height:400px;
+	max-width: 25%;
+}
+#TH, #PH, #CH{
+	display:none;
+}
+#TitreSite{
+	position:absolute;
+	font-size:3em;
+	left:94px;
+	top:7px;
+	color:#0860A0;
+}
+
+#identité, #coordonée, #adresse
+ {
+	 margin-bottom:9px;
+	 margin-right:7px;
+	 padding:8px;
+	 font-size: 1.6em;
+	 text-align:left;
+	 border:groove;
+	 border-width:2px;
+	 border-color:black;
+	 background-color:#B0B0B0 ;
+	 
+ }
+ #identité{
+	 margin-top:8%;
+ }
+ #adresse{
+	margin-bottom: 5%;
+ }
+ 
+#ENTETE{
+	background: rgb(125,126,125);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%);
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 );
+	padding:8px;
+	height: 80px;
+	
+}
+
+#ENTETE2{
+	background-color:#969696;
+	margin-top:15px;
+	padding:8px;
+	max-width:80%;
+}
+
+#logo{
+   position:absolute;
+   left:20px;
+}
+
+#LOGIN{
+   position:absolute;
+   right:40px;
+}
+
+#COMPTE{
+   position:absolute;
+   right:200px;
+}
+
+
+#SEXE{
+	padding-right:10px;
+	visibility:hidden;
+}
+
+#PRODUITS{
+	margin-left:40px;
+	vertical-align:top;
+}
+#Produit{
+	padding:5px;
+	margin-top:5%;
+	max-width:1200px;
+}
+
+/* CSS sur class */
+.DivLib{
+	max-width:40%;
+	display:inline-block;
+}
+
+.INLINE{
+	display:inline-block;
+}
+
+.ImageProduit{
+	width:50%;
+	padding:8px;
+}
+
+.PRODUIT{
+	vertical-align:top;
+	display:inline-block;
+	width:45%;
+	padding-top:0px;
+	
+}
+
+.A{
+	vertical-align:middle;
+	padding-left: 20px;
+}
+
+.ColFooter
+{
+   
+   display:inline-block;
+   width:20%;
+   padding-top:2%;
+   padding-left:5%;
+   padding-right:5%;
+   padding-bottom:11%;
+}
+
+.btn {
+  background: #a6a6a6;
+  background-image: -webkit-linear-gradient(top, #a6a6a6, #35424a);
+  background-image: -moz-linear-gradient(top, #a6a6a6, #35424a);
+  background-image: -ms-linear-gradient(top, #a6a6a6, #35424a);
+  background-image: -o-linear-gradient(top, #a6a6a6, #35424a);
+  background-image: linear-gradient(to bottom, #a6a6a6, #35424a);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
